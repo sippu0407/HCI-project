@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+
+
+
+    <!-- extracode -->
+    <script type="text/javascript">
+        // Wait for document to load
+        document.addEventListener("DOMContentLoaded", function (event) {
+            document.documentElement.setAttribute("data-theme", "light");
+
+            // Get our button switcher
+            var themeSwitcher = document.getElementById("theme-switcher");
+
+            // When our button gets clicked
+            themeSwitcher.onclick = function () {
+                // Get the current selected theme, on the first run
+                // it should be `light`
+                var currentTheme = document.documentElement.getAttribute("data-theme");
+
+                // Switch between `dark` and `light`
+                var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+
+                // Set our currenet theme to the new one
+                document.documentElement.setAttribute("data-theme", switchToTheme);
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="left">
+            <img src="./images/nsit.svg" class="nsitimg" alt="">
+            <div class="navtext">
+                <h2 class="nsitname">NETAJI SUBHAS UNIVERSITY OF TECHNOLOGY</h2>
+                <h3 class="nsitname-add">Azad Hind Fauz Marg,New Delhi - 110078</h3>
+            </div>
+        </div>
+        <div class="right">
+            <img src="./images/photo.jpg" class="rightimg" alt="">
+            <h3><img src="./images/home.svg" class="rightbottomimg" alt=""> Welcome : username</h3>
+        </div>
+    </div>
+
+
+
+    <!-- main part -->
+
+    <div class="main">
+        <div class="mainleft">
+
+
+
+            <div class="icon">
+                <button id="theme-switcher">
+                    <img src="./images/darkmode.svg" alt="">
+                </button>
+                <h4 class="text"><br> darkmode</h4>
+
+            </div>
+
+            <!-- icons in left menu -->
+            <div class="icon">
+                <img src="./images/profile.svg" alt="" class="cardImg">
+                <h4 class="text">Profile</h4>
+            </div>
+
+            <div class="icon">
+                <img src="./images/activity1.svg" alt="" class="cardImg">
+                <h4 class="activitytext">My Activity</h4>
+            </div>
+
+            <div class="icon">
+                <img src="./images/registration.svg" alt="" class="cardImg x">
+                <h4 class="text">Registration</h4>
+            </div>
+
+            <div class="icon">
+                <img src="./images/password.svg" alt="" class="cardImg">
+                <h4 class="text">Password</h4>
+            </div>
+
+            <div class="icon">
+                <img src="./images/logout.svg" alt="" class="cardImg logout">
+                <h4 class="text">Logout</h4>
+            </div>
+
+        </div>
+        <div class="mainright">
+            <div class="plum">
+                PLUM ERP
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
