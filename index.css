@@ -87,8 +87,8 @@ justify-content: space-between;
 
  /* left side icons */
  .cardImg{
-    width:100px;
-    height:100px;
+    width:83px;
+    height:83px;
  }
  .x{
      margin-left:1vw;
@@ -101,7 +101,7 @@ justify-content: space-between;
 }
 
 .icon{
-    margin-top: .8vh;
+    margin-top: 1.4vh;
     text-align: center;
     width: 126px;
 }
